@@ -8,11 +8,7 @@ import (
 )
 
 func GetCertificates() []Certificate {
-	certs := []Certificate{}
-	for _, cert := range certificatesDatabase {
-		certs = append(certs, cert)
-	}
-	return certs
+	return certificates
 }
 
 func GetCertificateByID(id uuid.UUID) Certificate {
